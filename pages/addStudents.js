@@ -37,14 +37,14 @@ const handleSubmit = (e) => {
   localStorage.setItem('students',JSON.stringify(currentStudents));
 
 }
-export default function ListStudentsPage() {
+export default function addStudents() {
   return (
     <>
       <Head>
         <meta name="viewport" content="width=device-width,initial-scale=1" />
       </Head>
       <FlexWrapper>
-        <Header>Sam Hill's Discount Student App</Header>
+        <Header>Sam Hill&apos;s Discount Student App</Header>
         <Nav></Nav>
         <Main>
             <table>
@@ -54,7 +54,7 @@ export default function ListStudentsPage() {
                    <option value="CSTP">Computer Systems Technology Program</option>
                    <option value="ERT">Electronics Repair Technician</option>
                    <option value="FASH">Fashion Design</option></select></td></tr>
-                 <tr><td colspan="2"><button onClick={(e) => {handleSubmit()}}>Add Student</button></td></tr>
+                 <tr><td colSpan="2"><button onClick={(e) => {handleSubmit()}}>Add Student</button></td></tr>
                  </table></Main>
       <Footer></Footer>
     </FlexWrapper>

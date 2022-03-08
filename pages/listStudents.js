@@ -26,12 +26,12 @@ export default function ListStudentsPage() {
         <meta name="viewport" content="width=device-width,initial-scale=1" />
       </Head>
       <FlexWrapper>
-        <Header>Sam Hill's Discount Student App</Header>
+        <Header>Sam Hill&apos;s Discount Student App</Header>
         <Nav></Nav>
         <Main><h1>Here is a list of students...</h1>
         <table><tbody>
         {
-          allStudents.map((s) => <StudentRow firstName={s.firstName} lastName = {s.lastName} program={s.program} />)
+          allStudents.map((s, index) => <StudentRow firstName={s.firstName} lastName = {s.lastName} program={s.program} key={index} />)
           
         }</tbody></table></Main>
         <Footer></Footer>
