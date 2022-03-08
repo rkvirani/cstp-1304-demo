@@ -1,0 +1,66 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: skyblue;
+}
+.footer {
+  background-color: lightgreen;
+}
+.main {
+  background-color: lightcoral;
+}
+.nav {
+  background-color: lightyellow;
+}
+
+/* All the Flexbox things... */
+/* Begin the flexboxes */
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+
+/* Apply all these styles to the classes inside wrapper */
+
+.wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+}
+
+/* Standard desktop */
+@media all and (min-width: 800px)  {
+
+.main {flex: 4 0px;}
+.header { order: 1;}
+.main { order: 2;}
+.nav {flex: 1; order:3 ;}
+.footer { order: 4;}
+
+}
+
+@media all and (min-width: 600px)   {
+
+.nav {flex: 2 0px;}
+.header { order: 1;}
+.main { order: 2;}
+.nav {order:3 ;}
+.footer { order :5;}
+
+}
