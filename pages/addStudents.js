@@ -46,8 +46,8 @@ export default function addStudents() {
         <Nav></Nav>
         <Main>
             <table>
-                 <tr><td>firstName</td><td><input type="text" id="firstName" value="Sam"/></td></tr>
-                 <tr><td>lastName</td><input type="text" id="lastName" value="Hill"/></tr>
+                 <tr><td>firstName</td><td><input type="text" id="firstName"/></td></tr>
+                 <tr><td>lastName</td><input type="text" id="lastName" /></tr>
                  <tr><td>Program</td><td><select id="program">
                    <option value="CSTP">Computer Systems Technology Program</option>
                    <option value="ERT">Electronics Repair Technician</option>
